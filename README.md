@@ -38,7 +38,7 @@ docker build -t [navn] .
 
 Kør en mysql container:
 ```bash
-docker run --rm --name Test --restart unless-stopped -p 3306:3306 -e MYSQL_ROOT_PASSWORD=test -d mysql
+docker run --name Test --restart unless-stopped -p 3306:3306 -e MYSQL_ROOT_PASSWORD=test -d mysql
 ```
 
 herefter skabes adgang til mysql serveren ved følgende:
