@@ -57,7 +57,7 @@ mysql -uroot -p
 
 ---
 
-# CLI Commands For Various Stuff
+# CLI Commands For Various Stuff `unix based`
 
 Install nano for linux:
 ```bash
@@ -78,12 +78,9 @@ The permissions themselves are represented by `r`
 (Read), `w` (Write), and `x` (Execute).
 
 ### Numeric Representation of Permissions:
-
 - `r` (Read) is represented by the number `4`.
 - `w` (Write) is represented by the number `2`.
 - `x` (Execute) is represented by the number `1`.
-
-#### Examples:
 
 #### Make a File Executable for Everyone:
 
@@ -97,6 +94,21 @@ For only group and other:
 ```bash
 chmod go+x filename
 ```
+
+### Dealing With Users
+
+Create a new user (if any issues run apt install sudo)
+adding sudo will make user sudo privileges:
+```bash
+adduser newUser
+```
+
+Switch user:
+```bash
+su newUser
+```
+
+## Network Related CLI
 
 lsof lists open network connections and the 
 associated processes on your system.
