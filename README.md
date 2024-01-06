@@ -97,10 +97,14 @@ chmod go+x filename
 
 ### Dealing With Users
 
-Create a new user (if any issues run apt install sudo)
-adding sudo will make user sudo privileges:
+Create a new user (if any issues run apt install sudo):
 ```bash
 adduser newUser
+```
+
+Adding sudo priv to created user:
+```bash
+usermod -aG sudo newUser
 ```
 
 Switch user:
