@@ -4,6 +4,6 @@ spring:
     hibernate:
       ddl-auto: create-drop
   datasource:
-    url: jdbc:mysql://localhost:3306/Test
-    username: root
-    password: test
+    url: ${JDBC_URL}
+    username: ${JDBC_USERNAME}
+    password: ${JDBC_PASSWORD}
