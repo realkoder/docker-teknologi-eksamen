@@ -113,6 +113,11 @@ su newUser
 
 ## Network Related CLI
 
+View ip addresses and CIDR notation:
+```bash
+ip address show
+```
+
 ### DNS Related Stuff
 
 Name server lookup - resolve a domain name to its 
