@@ -2,20 +2,19 @@
 
 ## Install docker for linux
 
-Opdater package listen, hvilket er relevant når ny
-software skal installeres for at sikre nyeste version.
+Update package list, which is relevant for
+installing new software and insuring latest versions.
 ```bash
 sudo apt-get update
 ```
 
-Docker har et script der kan køres 
-for at få Docker installed.
+Docker provides a script to install docker.
 
 ```bash
 curl -fsSL https://get.docker.com -o get-docker.sh
 ```
 
-Herefter køres scriptet lokalt:
+Execute the script:
 ```bash
 sudo sh get-docker.sh
 ```
@@ -26,7 +25,7 @@ sudo sh get-docker.sh
 
 ## Docker Steerings
 
-Kør en simpel ubuntu docker container:
+Run a simple ubuntu docker container:
 ```bash
 docker run -it ubuntu
 ```
@@ -42,12 +41,12 @@ docker build -t [navn] .
 
 ## MYSQL docker container
 
-Kør en mysql container:
+Run a mysql container:
 ```bash
 docker run --name Test --restart unless-stopped -p 3306:3306 -e MYSQL_ROOT_PASSWORD=test -d mysql
 ```
 
-herefter skabes adgang til mysql serveren ved følgende:
+Access the mysql server:
 ```bash
 docker exec -it Test bash
 mysql -uroot -p
@@ -113,6 +112,23 @@ su newUser
 ```
 
 ## Network Related CLI
+
+### DNS Related Stuff
+
+Name server lookup - resolve a domain name to its 
+corresponding IP address.
+```bash
+nslookup example.com
+```
+
+WHOIS lookup to find information about 
+domain registration, including the owner's 
+contact details and registration date.
+```bash
+whois example.com
+```
+
+<br>
 
 lsof lists open network connections and the 
 associated processes on your system.
