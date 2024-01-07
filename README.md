@@ -3,7 +3,7 @@
 ## Install docker for linux
 
 Update package list, which is relevant for
-installing new software and insuring latest versions.
+installing new software and ensuring latest versions.
 ```bash
 sudo apt-get update
 ```
