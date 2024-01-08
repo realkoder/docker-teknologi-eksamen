@@ -17,7 +17,7 @@ public class TestRestController {
     @GetMapping
     @ResponseStatus(HttpStatus.ACCEPTED)
     public String getTestMsg() {
-        return "<h1 style=\"color: green\">" + "Test is working!!" + "</h1>";
+        return "<h1 style=\"color: green\">" + "Test is working!! forcing action" + "</h1>";
     }
 
     @GetMapping("/messages")
